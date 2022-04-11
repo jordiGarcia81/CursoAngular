@@ -5,8 +5,13 @@
       </mat-card-title>
     </mat-card-header>
     <mat-card-content>
+      {{themeColor}}
+      <br>
       <span [style.color]="themeColor">Some colored text</span>
+      <br>
+        <input name="themeColor" matInput [(ngModel)]="themeColor" type="text">
+        <br>
+        <button mat-button (click)="updateColor()">Update</button>
       <pre>{{courseLessons | json}}</pre>
-      
     </mat-card-content>
   </mat-card>

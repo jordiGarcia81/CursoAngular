@@ -24,4 +24,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  updateColor(){
+    
+    this.themeColor='red';
+  }
 }
