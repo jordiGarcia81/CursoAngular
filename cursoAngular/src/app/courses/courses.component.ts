@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DefaultIterableDiffer, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-courses',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
+  selectedCourse= null;
   courses = [
     {
       id: 1,
@@ -28,4 +29,11 @@ export class CoursesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectCourse(course){
+    this.selectedCourse=course;
+  }
+
+  deleteCourse(courseId){
+    console.log('COURSE Deleted',courseId);
+  }
 }
