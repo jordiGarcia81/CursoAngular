@@ -6,6 +6,20 @@
       "description": "Learn the fundamentals of Angular 9",
       "percentComplete": 26,
       "favorite": true
+    },
+    {
+      "id": 2,
+      "title": "a",
+      "description": "b",
+      "percentComplete": 0,
+      "favorite": false
+    },
+    {
+      "id": 3,
+      "title": "Learning Empire",
+      "description": "Jordi",
+      "percentComplete": 37,
+      "favorite": false
     }
   ]
 }
