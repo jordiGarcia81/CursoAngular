@@ -51,4 +51,8 @@ export class CoursesComponent implements OnInit {
   cancel(){
     this.resetSelectedCourse();
   }
+
+  saveCourse(){
+    
+  }
 }
