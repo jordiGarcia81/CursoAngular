@@ -1,4 +1,5 @@
 import { Component, DefaultIterableDiffer, OnInit } from '@angular/core';
+import { CoursesService } from '../shared/services/courses.service';
 
 @Component({
   selector: 'app-courses',
@@ -7,27 +8,13 @@ import { Component, DefaultIterableDiffer, OnInit } from '@angular/core';
 })
 export class CoursesComponent implements OnInit {
   selectedCourse= null;
-  courses = [
-    {
-      id: 1,
-      title: 'Angular 9 Fundamentals',
-      description: 'Learn the fundamentals of Angular 9',
-      percentComplete: 26,
-      favorite: true
-    },
-    {
-      id: 2,
-      title: 'JavaScript',
-      description: 'Learn JavaScript',
-      percentComplete: 56,
-      favorite: true
-    }
-  ];
+  courses = null;
 
-  constructor() { }
+  constructor(private coursesService : CoursesService) { }
 
   ngOnInit(): void {
-    this.resetSelectedCourse()
+    this.resetSelectedCourse();
+    this.courses=this.coursesService.courses;
   }
 
   selectCourse(course){
@@ -53,6 +40,6 @@ export class CoursesComponent implements OnInit {
   }
 
   saveCourse(){
-    
+
   }
 }
