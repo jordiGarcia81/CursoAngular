@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class CoursesService {
 
-  courses = [
+  private courses = [
     {
       id: 1,
       title: 'Angular 9 Fundamentals',
@@ -22,5 +23,25 @@ export class CoursesService {
     }
   ];
 
-  constructor() { }
+  constructor() {}
+
+  all(){
+    return this.courses;
+  }
+
+  find(courseId){
+
+  }
+
+  create(course){
+
+  }
+
+  update(course){
+    
+  }
+
+  delete(courseId){
+
+  }
 }
