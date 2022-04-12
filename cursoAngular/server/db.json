@@ -8,13 +8,6 @@
       "favorite": true
     },
     {
-      "id": 2,
-      "title": "a",
-      "description": "b",
-      "percentComplete": 0,
-      "favorite": false
-    },
-    {
       "id": 3,
       "title": "Learning Empire",
       "description": "Jordi",
