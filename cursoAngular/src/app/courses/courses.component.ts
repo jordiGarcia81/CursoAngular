@@ -7,10 +7,6 @@ import { CoursesService } from '../shared/services/courses.service';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
-  // CHALLENGE
-  // STEP 01: Complete remote update call
-  // STEP 02: Complete remote delete call
-  // STEP 03: Fix UI on completed operation
 
   selectedCourse = null;
 
