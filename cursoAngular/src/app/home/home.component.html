@@ -1,4 +1,8 @@
-<mat-card>
+<app-lesson-list [lessons]="courseLessons" (selected)="selectLesson($event)"></app-lesson-list>
+
+<pre>{{currentLesson | json}}</pre>
+
+<!-- <mat-card>
     <mat-card-header>
       <mat-card-title>
         {{ title }}
@@ -23,8 +27,8 @@
          <ng-template #elseBlock>Select a Lesson</ng-template>
       </mat-card-content>
      
-  </mat-card>
-  <br>
+  </mat-card> -->
+  <!-- <br>
   <mat-card-content>
       {{themeColor}}
       <br>
@@ -35,4 +39,4 @@
         <button mat-button (click)="updateColor()">Update</button>
       <pre>{{courseLessons | json}}</pre>
     </mat-card-content>
-  </mat-card>
+  </mat-card> -->
